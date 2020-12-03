@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+:root {
+  --primary-color: #3748e4;
+  --secondary-color: #000;
+  --tertiary-color: #aaa;
+  --box-shadow: 0 4px 8px 0 rgba(219, 215, 215, 0.678);
+  --line-height-one: 2rem;
+  --line-height-two: 3rem;
+  --letter-spacing: -0.05rem;
+}
+
+.container {
+  width: 80%;
+  margin: 6rem auto;
+}
+
+.header {
+  margin-left: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.instructions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.number-one > p, .number-two > p, .number-three > p {
+  font-size: 72px;
+  width: 40px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-align: left;
+  margin-top: 90px;
+}  
+
+.o1, .o2, .o3 {
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.o1 {
+  position: absolute;
+  left: 163px;
+}  
+
+.o2 {
+  position: absolute;
+  left: 525px;
+}
+
+.o3 {
+  position: absolute;
+  left: 890px;
+}
+
+h1 {
+  line-height: var(--line-height-two);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing);
+}
+
+h2 {
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height-two);
+}
+
+h3 {
+  color: var(--primary-color);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height-one);
+}
+
+p {
+  color: var(--tertiary-color);
+  line-height: var(--line-height-one);
+}
+
+.o1 p, .o2 p, .o3 p {
+  width: 17rem;
+  font-size: 15px;
+}
+
+
+
+.footer > div {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 50px 200px;
+  gap: 0;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.footer > div div {
+  align-self: center;
+}
+
+.footer > div p {
+  color: var(--primary-color);
+}
